@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "GamersInventory (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "GamersInventory (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+<Window x:Class="GamersInventory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:GamersInventory"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Gamer's - Login">
+
+    <Grid Background="#1a1a1a" Padding="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,20,0,40">
+            <TextBlock Text="🎮" FontSize="40" HorizontalAlignment="Center"/>
+            <TextBlock Text="GAMER'S" FontSize="24" FontWeight="Bold" 
+                      Foreground="White" HorizontalAlignment="Center"/>
+            <TextBlock Text="Sistema de Inventario" FontSize="14" 
+                      Foreground="#cccccc" HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <!-- Login Form -->
+        <StackPanel Grid.Row="1" Spacing="20">
+            <TextBox x:Name="txtUsuario" 
+                     Background="#2a2a2a" Foreground="White"
+                     BorderBrush="#444" Height="40"
+                     PlaceholderText="Ingresa tu usuario"/>
+
+            <PasswordBox x:Name="txtPassword"
+                         Background="#2a2a2a" Foreground="White"
+                         BorderBrush="#444" Height="40"
+                         PlaceholderText="Ingresa tu contraseña"/>
+
+            <Button x:Name="btnLogin" Content="INICIAR SESIÓN" 
+                   Background="#0066cc" Foreground="White"
+                   FontWeight="Bold" Height="45"
+                   Click="BtnLogin_Click"/>
+        </StackPanel>
+
+        <!-- Footer -->
+        <TextBlock Grid.Row="2" Text="Solo personal autorizado" 
+                  Foreground="#666" HorizontalAlignment="Center"
+                  Margin="0,20,0,0"/>
+    </Grid>
+</Window>   
